@@ -29,28 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAbout));
-            this.lnk = new System.Windows.Forms.LinkLabel();
             this.lblThanks = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lnk
-            // 
-            this.lnk.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(117)))), ((int)(((byte)(105)))));
-            this.lnk.AutoSize = true;
-            this.lnk.BackColor = System.Drawing.Color.Transparent;
-            this.lnk.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lnk.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(117)))), ((int)(((byte)(105)))));
-            this.lnk.Location = new System.Drawing.Point(116, 126);
-            this.lnk.Name = "lnk";
-            this.lnk.Size = new System.Drawing.Size(171, 14);
-            this.lnk.TabIndex = 0;
-            this.lnk.TabStop = true;
-            this.lnk.Text = "http://www.isilorhanel.net/palantir";
-            this.lnk.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(117)))), ((int)(((byte)(105)))));
-            this.lnk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk_LinkClicked);
             // 
             // lblThanks
             // 
@@ -85,11 +67,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(299, 165);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblThanks);
-            this.Controls.Add(this.lnk);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
@@ -99,17 +79,15 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client";
+            this.Load += new System.EventHandler(this.frmAbout_Load);
             this.Click += new System.EventHandler(this.frmAbout_Click);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmAbout_KeyPress);
-            this.Load += new System.EventHandler(this.frmAbout_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.LinkLabel lnk;
         private System.Windows.Forms.Label lblThanks;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;

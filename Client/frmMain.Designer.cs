@@ -182,7 +182,7 @@
             // 
             this.aboutPalantirToolStripMenuItem.Name = "aboutPalantirToolStripMenuItem";
             this.aboutPalantirToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.aboutPalantirToolStripMenuItem.Text = "About Palantir";
+            this.aboutPalantirToolStripMenuItem.Text = "About Client";
             this.aboutPalantirToolStripMenuItem.Click += new System.EventHandler(this.aboutPalantirToolStripMenuItem_Click);
             // 
             // subscribeForUpdatesToolStripMenuItem
@@ -205,7 +205,7 @@
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,7 +213,7 @@
             this.Controls.Add(this.tcMain);
             this.Controls.Add(this.msMain);
             this.MainMenuStrip = this.msMain;
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Desktop";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
